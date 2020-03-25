@@ -9,6 +9,16 @@
 
 	<div class="container">
 		<section>
+			<?php if(isset($_SESSION['message'])) {?>
+				<div class="alert alert-<?= $_SESSION['message_type'] ?> <?= $_SESSION['d-none'] ?>" id="alert">
+					<span>
+						<?= $_SESSION['message']?>
+					</span>
+					<a href="delete_alert.php?close=d-none">
+						<i class="fa fa-close" id="close" name="close"></i>
+					</a>
+				</div>
+			<?php session_unset(); }?>
 			<div class="card">
 				<h3>Add a new Todo</h3>
 				<form method="POST" action="add_todo.php">

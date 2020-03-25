@@ -12,6 +12,9 @@
             die("Something was wrong");
         }
 
+        $_SESSION['message'] = "Todo deleted successfully";
+        $_SESSION['message_type'] = "danger";
+
         header("location: index.php");
     }
 

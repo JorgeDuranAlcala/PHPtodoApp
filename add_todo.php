@@ -14,6 +14,9 @@
             die("Query failed");
         }
 
+        $_SESSION['message'] = "Todo Added Successfully";
+        $_SESSION['message_type'] = "success";
+
     header("Location: index.php");
     }
 

@@ -16,6 +16,9 @@
             die("Something was wrong ". mysqli_error($conn));
         }
 
+        $_SESSION['message'] = "Todo updated successfully";
+        $_SESSION['message_type'] = "update";
+
         header("Location: index.php");
     }
 

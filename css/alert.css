@@ -1,0 +1,18 @@
+.alert {
+    width: 50%;
+    height: 40px;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert-success {
+    background-color: rgb(9, 211, 36);
+}
+
+
+:root {
+    --color1: rgb(234, 40, 69);
+}
+
